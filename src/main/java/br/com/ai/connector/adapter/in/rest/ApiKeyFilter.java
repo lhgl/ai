@@ -21,7 +21,7 @@ public class ApiKeyFilter implements ContainerRequestFilter {
             return;
         }
         String provided = requestContext.getHeaderString("X-Connector-Key");
-        if (provided == null || !expectedApiKey.equals(provided)) {
+        if (!expectedApiKey.equals(provided)) {
             throw new WebApplicationException("Nao autorizado.", 401);
         }
     }

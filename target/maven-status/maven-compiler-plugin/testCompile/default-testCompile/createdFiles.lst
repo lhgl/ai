@@ -1,0 +1,8 @@
+br\com\ai\connector\application\usecase\InferenceUseCaseTest$3.class
+br\com\ai\connector\application\usecase\TrainingJobUseCaseTest.class
+br\com\ai\connector\application\usecase\InferenceUseCaseTest.class
+br\com\ai\connector\application\usecase\InferenceUseCaseTest$2$1.class
+br\com\ai\connector\application\usecase\InferenceUseCaseTest$2.class
+br\com\ai\connector\application\usecase\TrainingJobUseCaseTest$CapturingTrainingQueuePort.class
+br\com\ai\connector\application\usecase\InferenceUseCaseTest$1.class
+br\com\ai\connector\application\usecase\TrainingJobUseCaseTest$NoopTrainingQueuePort.class

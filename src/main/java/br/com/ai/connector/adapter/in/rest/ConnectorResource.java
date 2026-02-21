@@ -16,8 +16,8 @@ import jakarta.ws.rs.POST;
 import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.BeanParam;
 import jakarta.ws.rs.core.MediaType;
-import org.jboss.resteasy.reactive.MultipartForm;
 import org.jboss.resteasy.reactive.RestStreamElementType;
 
 import java.io.IOException;
@@ -109,7 +109,7 @@ public class ConnectorResource {
             @HeaderParam("X-Data-Characteristic") String characteristic,
             @HeaderParam("X-Module-Key") String moduleKey,
             @HeaderParam("X-Profile-Id") String profileId,
-            @MultipartForm FileRequestForm form
+            @BeanParam FileRequestForm form
     ) throws IOException {
         if (form == null || form.file == null) {
             throw new IllegalArgumentException("Multipart invalido: arquivo nao informado.");
